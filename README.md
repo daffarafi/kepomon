@@ -13,21 +13,21 @@ Pemilihan antara metode POST dan GET tergantung pada tipe permintaan yang hendak
 
 
 ### Apa perbedaan utama antara XML, JSON, dan HTML dalam konteks pengiriman data?
-# XML (eXtensible Markup Language):
+#### XML (eXtensible Markup Language):
 Struktur: Menggunakan tag dan atribut untuk mendefinisikan struktur data.
 Tujuan Utama: Digunakan untuk menyusun dan bertukar data dalam format yang dapat disesuaikan dengan berbagai keperluan, seperti konfigurasi, penyimpanan data, dan pertukaran data antar sistem.
 Penggunaan Umum: Lebih umum digunakan dalam lingkungan yang memerlukan fleksibilitas dalam struktur data, seperti aplikasi konfigurasi dan interaksi antar sistem.
 Keuntungan: Fleksibel, dapat disesuaikan, dan cocok untuk berbagai keperluan struktur data.
 Keterbatasan: Sintaksis kompleks, ukuran file yang biasanya lebih besar, memerlukan lebih banyak pemrosesan.
 
-# JSON (JavaScript Object Notation):
+#### JSON (JavaScript Object Notation):
 Struktur: Menggunakan pasangan nama-nilai dalam objek.
 Tujuan Utama: Digunakan untuk pertukaran data ringan antar server dan klien dalam format yang mudah dibaca oleh manusia dan diurai oleh mesin, terutama dalam pengembangan web.
 Penggunaan Umum: Umumnya digunakan dalam pengembangan web untuk pertukaran data antar sistem, penyimpanan konfigurasi, dan berbagai keperluan struktur data.
 Keuntungan: Ringan, mudah dibaca, mudah diurai, ukuran file yang lebih kecil, cocok untuk pertukaran data dalam lingkungan web.
 Keterbatasan: Tidak sesuai untuk menyimpan data dengan struktur yang kompleks atau untuk keperluan lain selain pertukaran data.
 
-# HTML (Hypertext Markup Language):
+#### HTML (Hypertext Markup Language):
 Struktur: Menggunakan tag untuk mendefinisikan elemen dalam dokumen web.
 Tujuan Utama: Digunakan untuk membuat tampilan dan struktur halaman web, termasuk teks, gambar, tautan, dan elemen-elemen lainnya.
 Penggunaan Umum: Digunakan eksklusif untuk membuat halaman web dan mengorganisir konten serta interaksi pengguna di web.
@@ -35,7 +35,7 @@ Keuntungan: Cocok untuk tampilan web, dukungan browser yang kuat, dan integrasi 
 Keterbatasan: Hanya cocok untuk tampilan dan interaksi web, bukan untuk pertukaran data umum atau penyimpanan struktur data.
 
 ### Mengapa JSON sering digunakan dalam pertukaran data antara aplikasi web modern?
-    Kombinasi dari ringan, mudah dibaca, kemampuan parsing cepat, dan dukungan yang kuat dalam ekosistem web telah membuat JSON menjadi pilihan utama untuk pertukaran data antara aplikasi web modern. JSON juga sering digunakan dalam format data API yang memungkinkan aplikasi web berkomunikasi dengan layanan web atau server backend.
+Kombinasi dari ringan, mudah dibaca, kemampuan parsing cepat, dan dukungan yang kuat dalam ekosistem web telah membuat JSON menjadi pilihan utama untuk pertukaran data antara aplikasi web modern. JSON juga sering digunakan dalam format data API yang memungkinkan aplikasi web berkomunikasi dengan layanan web atau server backend.
 
 ### Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas secara step-by-step (bukan hanya sekadar mengikuti tutorial).
 Asumsikan proyek django sudah ada yang berasal dari Tugas 2.

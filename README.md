@@ -3,6 +3,7 @@
 
 <details>
     <summary>Tugas 3</summary>
+    
 ### Apa perbedaan antara form POST dan form GET dalam Django?
 
 POST: Saat menggunakan metode POST dalam Django (dan dalam pengembangan web umumnya), Biasa digunakan untuk mengirimkan data dari klien (dapat berupa formulir yang diisi oleh pengguna) ke server. POST merupakan metode yang lebih aman karena data dikirim dalam body HTTP, yang membuatnya tidak terlihat di URL. Form POST cocok untuk mengirim data sensitif, seperti kata sandi, dan untuk mengirim data yang akan mengubah status atau data di server, seperti menambahkan atau mengubah entri di database. Untuk membuat request POST pada django dapat dilakukan dengan request.POST.

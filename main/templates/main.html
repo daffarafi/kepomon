@@ -14,13 +14,18 @@
             <th>Amount</th>
             <th>Description</th>
             <th>Date Added</th>
+            <th>Action</th>
         </tr>
         {% for item in items %}
         <tr>
             <td>{{item.name}}</td>
-            <td>{{item.amount}}</td>
+            <td><span>{{item.amount}}</span><a href="{% url 'main:increment-item' id=item.id %}">Tambah</a><a
+                    href="{% url 'main:decrement-item' id=item.id %}">Kurang</a></td>
             <td>{{item.description}}</td>
             <td>{{item.date_added}}</td>
+            <td>
+                <a href="{% url 'main:delete-item' id=item.id %}">Hapus</a>
+            </td>
         </tr>
         {% endfor %}
     </table>
@@ -29,6 +34,12 @@
         <button
             style="border-width: 3px; border-color: rgb(37, 194, 160); border-style: solid; padding: 0.5rem 1rem; border-radius: 50px; background-color: transparent; color: rgb(37, 194, 160); font-weight: bold; cursor: pointer;">
             Add New Item &#8594;
+        </button>
+    </a>
+    <h5>Sesi terakhir login: {{ last_login }}</h5>
+    <a href="{% url 'main:logout' %}">
+        <button>
+            Logout
         </button>
     </a>
 </section>

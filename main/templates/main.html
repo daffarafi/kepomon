@@ -19,12 +19,20 @@
         {% for item in items %}
         <tr>
             <td>{{item.name}}</td>
-            <td><span>{{item.amount}}</span><a href="{% url 'main:increment-item' id=item.id %}">Tambah</a><a
-                    href="{% url 'main:decrement-item' id=item.id %}">Kurang</a></td>
+            <td style="display: flex; align-items: center; gap: 5px; justify-content: center;">
+                <span>{{item.amount}}</span>
+                <div style="display: flex; flex-direction: column;gap: 2px;">
+                    <a style="color: white; text-decoration: none; background-color: #25c2a0; line-height: 1; width: 30px; justify-content: center; display: flex; border-radius: 5px;"
+                        href="{% url 'main:increment-item' id=item.id %}">&#x2963;</a>
+                    <a style="color: white; text-decoration: none; background-color: #25c2a0; line-height: 1; width: 30px; justify-content: center; display: flex; border-radius: 5px;"
+                        href="{% url 'main:decrement-item' id=item.id %}">&#x2965;</a>
+                </div>
+            </td>
             <td>{{item.description}}</td>
             <td>{{item.date_added}}</td>
             <td>
-                <a href="{% url 'main:delete-item' id=item.id %}">Hapus</a>
+                <a style="border-radius: 50px; color: white; background-color: crimson; padding: 0.2rem 0.6rem; text-decoration: none;"
+                    href="{% url 'main:delete-item' id=item.id %}">Hapus</a>
             </td>
         </tr>
         {% endfor %}
@@ -32,7 +40,7 @@
     <br />
     <a href="{% url 'main:create_item' %}">
         <button
-            style="border-width: 3px; border-color: rgb(37, 194, 160); border-style: solid; padding: 0.5rem 1rem; border-radius: 50px; background-color: transparent; color: rgb(37, 194, 160); font-weight: bold; cursor: pointer;">
+            style="border-width: 3px; border-color: #25c2a0; border-style: solid; padding: 0.5rem 1rem; border-radius: 50px; background-color: transparent; color: rgb(37, 194, 160); font-weight: bold; cursor: pointer;">
             Add New Item &#8594;
         </button>
     </a>

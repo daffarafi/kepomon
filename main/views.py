@@ -44,12 +44,14 @@ def delete_item(request, id) :
     item.delete()
     return HttpResponseRedirect(reverse('main:show_main'))
 
+@login_required(login_url='/main/login')
 def increment_item(request, id) :
     item = Item.objects.get(id=id)
     item.amount += 1 
     item.save()
     return HttpResponseRedirect(reverse('main:show_main'))
 
+@login_required(login_url='/main/login')
 def decrement_item(request, id) :
     item = Item.objects.get(id=id)
     item.amount -= 1

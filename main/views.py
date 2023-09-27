@@ -46,14 +46,14 @@ def delete_item(request, id) :
 
 def increment_item(request, id) :
     item = Item.objects.get(id=id)
-    item.amount += 1
+    item.amount += 1 
     item.save()
     return HttpResponseRedirect(reverse('main:show_main'))
 
 def decrement_item(request, id) :
     item = Item.objects.get(id=id)
     item.amount -= 1
-    item.save()
+    if (item.amount > 0) :item.save()
     return HttpResponseRedirect(reverse('main:show_main'))
 
 def register(request):

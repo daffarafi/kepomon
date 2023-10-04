@@ -13,20 +13,22 @@
     <form method="POST" action="">
         {% csrf_token %}
         <table>
-            <tr>
-                <td>Username: </td>
-                <td><input type="text" name="username" placeholder="Username" class="form-control"></td>
-            </tr>
-
-            <tr>
-                <td>Password: </td>
-                <td><input type="password" name="password" placeholder="Password" class="form-control"></td>
-            </tr>
-
-            <tr>
-                <td></td>
-                <td><input class="btn login_btn" type="submit" value="Login"></td>
-            </tr>
+            <tbody>
+                <tr>
+                    <td>Username: </td>
+                    <td><input type="text" name="username" placeholder="Username" class="form-control"></td>
+                </tr>
+                <tr>
+                    <td>Password: </td>
+                    <td><input type="password" name="password" placeholder="Password" class="form-control"></td>
+                </tr>
+                <tr style="margin-top: 0.5rem; display: block;">
+                    <td></td>
+                    <td><input
+                            style="border-width: 3px; border-color: #25c2a0; border-style: solid; padding: 0.5rem 1rem; border-radius: 50px; background-color: transparent; color: rgb(37, 194, 160); font-weight: bold; cursor: pointer;"
+                            class="btn login_btn" type="submit" value="Login"></td>
+                </tr>
+            </tbody>
         </table>
     </form>
 
@@ -38,7 +40,7 @@
     </ul>
     {% endif %}
 
-    Don't have an account yet? <a href="{% url 'main:register' %}">Register Now</a>
+    Don't have an account yet? <a style="color:#25c2a0" href="{% url 'main:register' %}">Register Now</a>
 
 </div>
 

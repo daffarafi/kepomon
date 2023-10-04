@@ -2,6 +2,62 @@
 [Link](https://kepomon.adaptable.app/main)
 
 <details>
+    <summary>Tugas 5</summary>
+
+### Jelaskan manfaat dari setiap element selector dan kapan waktu yang tepat untuk menggunakannya.
+Element Selector memungkinkan pemilihan dan penerapan gaya pada semua elemen dengan tag tertentu pada halaman HTML. Element selector Dapat digunakan untuk memberikan styling global pada suatu jenis elemen. Element selector cocok digunakan ketika ingin menerapkan gaya yang sama pada semua elemen dengan tag tertentu. Hal ini berguna untuk mengelompokkan elemen-elemen yang serupa dan memberikan styling yang konsisten.
+
+Contoh Penggunaan:
+
+```css
+p {
+  margin: 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+```
+
+Dalam contoh ini, semua elemen paragraf pada halaman akan memiliki margin nol, padding 10px, dan border 1px solid #ccc.
+Penggunaan Element Selector berguna untuk mengontrol gaya pada elemen-elemen spesifik dalam halaman web secara efisien, membantu dalam menciptakan tata letak yang konsisten dan meningkatkan keterbacaan kode CSS.
+
+### Jelaskan HTML5 Tag yang kamu ketahui.
+
+1. \<article\>: Menunjukkan konten yang berdiri sendiri dan dapat berdiri secara independen.
+2. \<section\>: Mengelompokkan konten yang serupa atau terkait.
+3. \<nav\>: Menandai bagian yang berisi tautan navigasi.
+4. \<header\>: Menandai bagian kepala dari suatu elemen atau halaman.
+5. \<footer\>: Menandai bagian bawah dari suatu elemen atau halaman.
+6. Masih banyak lainnya...
+
+### Jelaskan perbedaan antara margin dan padding.
+
+- Margin: Menentukan ruang di luar elemen dan berpengaruh terhadap elemen di sekitarnya.
+- Padding: Menentukan ruang di dalam elemen, antara konten elemen dan batasnya.
+
+### Jelaskan perbedaan antara framework CSS Tailwind dan Bootstrap. Kapan sebaiknya kita menggunakan Bootstrap daripada Tailwind, dan sebaliknya?
+
+Perbedaan antara Tailwind dan Bootstrap:
+- Tailwind:
+  - Kelebihan: Konfigurasi yang sangat fleksibel, ukuran file yang lebih kecil karena hanya menggunakan apa yang dibutuhkan.
+  - Kekurangan: Membutuhkan penulisan kelas yang lebih banyak dan bisa terlihat "berantakan".
+- Bootstrap:
+  - Kelebihan: Lebih mudah digunakan dengan komponen siap pakai, dokumentasi yang baik.
+  - Kekurangan: Ukuran file yang mungkin lebih besar, kurangnya fleksibilitas dalam penyesuaian.
+
+Kapan Menggunakan Bootstrap atau Tailwind?
+- Bootstrap: Ketika membutuhkan cepatnya pembangunan dan memiliki desain yang relatif standar.
+- Tailwind: Ketika membutuhkan kontrol yang lebih besar atas desain dan tidak keberatan menulis lebih banyak kelas.
+
+### Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas secara step-by-step (bukan hanya sekadar mengikuti tutorial).
+
+Asumsikan pengerjaan tugas dimulai dari tugas sebelumnya:
+1. Karena sudah terdapat styling sebelumnya, maka hanya perlu merapihkan stylingnya saja.
+2. Kerjakan poin bonus dengan memberikan property :last-child pada tag tbody agar element terakhir memiliki style yang berbeda.
+
+
+</details>
+
+<details>
     <summary>Tugas 4</summary>
 
 ### Apa itu Django UserCreationForm, dan jelaskan apa kelebihan dan kekurangannya?

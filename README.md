@@ -2,6 +2,62 @@
 [Link](https://kepomon.adaptable.app/main)
 
 <details>
+    <summary>Tugas 6 </summary>
+
+### Jelaskan perbedaan antara asynchronous programming dengan synchronous programming.
+- Synchronous Programming:
+  1. Proses eksekusi perintah dilakukan secara berurutan, satu per satu.
+  2. Pada saat satu perintah dieksekusi, program menunggu hingga perintah tersebut selesai sebelum melanjutkan ke perintah berikutnya.
+  3. Blocking dapat terjadi, di mana eksekusi program terhenti sementara menunggu operasi yang membutuhkan waktu.
+- Asynchronous Programming:
+  1. Proses eksekusi perintah tidak berurutan; beberapa perintah dapat dieksekusi secara bersamaan.
+  2. Program tidak perlu menunggu hasil dari suatu operasi selesai sebelum melanjutkan ke operasi berikutnya.
+  3. Callbacks, promises, dan async/await adalah konsep umum yang digunakan dalam asynchronous programming untuk mengelola eksekusi non-blok.
+
+### Dalam penerapan JavaScript dan AJAX, terdapat penerapan paradigma event-driven programming. Jelaskan maksud dari paradigma tersebut dan sebutkan salah satu contoh penerapannya pada tugas ini.
+Paradigma ini berfokus pada kejadian (events) yang terjadi dalam program. Program merespon kejadian-kejadian tertentu dengan menjalankan fungsi atau blok kode yang terkait.
+Salah satu penerapannya pada tugas ini adalah ketika tombol submit untuk membuat item diklik 
+
+### Jelaskan penerapan asynchronous programming pada AJAX.
+
+Asynchronous programming pada AJAX memungkinkan aplikasi web untuk tetap responsif saat melakukan operasi jaringan, seperti mengirim atau menerima data dari server. Dengan menggunakan Fetch API, pengembang dapat menginisiasi permintaan ke server secara asinkron, yang artinya eksekusi program tidak akan terhenti menunggu respons dari server sebelum melanjutkan eksekusi kode berikutnya.
+Salah satu cara menggunakan Fetch API adalah dengan async/await
+
+### Pada PBP kali ini, penerapan AJAX dilakukan dengan menggunakan Fetch API daripada library jQuery. Bandingkanlah kedua teknologi tersebut dan tuliskan pendapat kamu teknologi manakah yang lebih baik untuk digunakan.
+
+- Fetch API:
+  - Kelebihan:
+    1. Built-in pada browser modern.
+    2. Lebih ringan dan sederhana.
+    3. Mendukung Promise.
+  - Kekurangan:
+    1. Tidak mendukung beberapa fitur kenyamanan yang dimiliki oleh jQuery.
+- jQuery:
+  - Kelebihan:
+    1. Mudah digunakan dan memiliki sintaks yang lebih singkat.
+    2. Kompatibilitas lintas browser yang baik.
+    3. Memiliki banyak fungsi utilitas.
+  - Kekurangan:
+    1. Ukuran file yang lebih besar daripada Fetch API.
+    2. Mungkin berlebihan jika hanya digunakan untuk AJAX.
+
+Menurut saya, baik Fetch API maupun JQuery dapat melakukan perintah AJAX yang sama, JQuery membutuhkan library tambahan sehingga akan memperbesar size dari aplikasi ketika build untuk produksi. Namun JQuery dapat mempercepat development. Hal ini tentu bergantung kebutuhan, apakah development dibutuhkan dalam waktu cepat atau tidak.
+
+### Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas secara step-by-step (bukan hanya sekadar mengikuti tutorial).
+
+Asumsikan tugas kali ini melanjutkan tugas sebelumnya.
+1. Buat fungsi untuk refresh table.
+2. Fungsi ini akan melakukan get content table.
+3. Hasil dari get ini dirender menggunakan innerHTML.
+4. Buat fungsi post untuk menambahkan barang.
+5. Pastikan memanggil fungsi refresh table setelah melakukan post agar table mengupdate konten tiap menambahkan barang baru.
+6. Buat fungsi hapus barang.
+7. Pastikan memanggil fungsi refresh table setelah melakukan hapus barang agar table mengupdate kontent tiap menghapus barang.
+
+
+</details>
+
+<details>
     <summary>Tugas 5</summary>
 
 ### Jelaskan manfaat dari setiap element selector dan kapan waktu yang tepat untuk menggunakannya.

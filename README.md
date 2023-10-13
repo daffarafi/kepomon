@@ -1,5 +1,6 @@
 # Kepomon
 [Link](https://kepomon.adaptable.app/main)
+DOKKU_APP_NAME = muhammad-daffai-tugas
 
 <details>
     <summary>Tugas 6 </summary>

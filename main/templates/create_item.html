@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section>
+    <h1>Add New Product</h1>
+
+    <form method="POST">
+        {% csrf_token %}
+        <table>
+            {{ form.as_table }}
+            <tr>
+                <td></td>
+                <td>
+                    <input
+                        style="border-width: 3px; border-color: #25c2a0; border-style: solid; padding: 0.5rem 1rem; border-radius: 50px; background-color: transparent; color: rgb(37, 194, 160); font-weight: bold; cursor: pointer;"
+                        type="submit" value="Add Product" />
+                </td>
+            </tr>
+        </table>
+    </form>
+</section>
+
+{% endblock %}

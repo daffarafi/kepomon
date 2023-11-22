@@ -18,6 +18,8 @@ RUN addgroup --system django \
 # Requirements are installed here to ensure they will be cached.
 COPY ./requirements.txt /requirements.txt
 RUN pip install -r /requirements.txt
+RUN python manage.py makemigrations
+RUN python manage.py migrate
 
 # Copy project code
 COPY . .

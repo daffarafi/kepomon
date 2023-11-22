@@ -11,6 +11,7 @@ from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.decorators import login_required
 from django.views.decorators.csrf import csrf_exempt
 import json
+from django.http import JsonResponse
 
 
 @login_required(login_url='/main/login')
@@ -134,3 +135,23 @@ def remove_item_ajax(request):
     item = Item.objects.get(id=data['itemId'])
     item.delete()
     return HttpResponse(b'DELETED', status=204)
+
+
+@csrf_exempt
+def create_product_flutter(request):
+    if request.method == 'POST':
+
+        data = json.loads(request.body)
+
+        new_item = Item.objects.create(
+            user=request.user,
+            name=data["name"],
+            amount=int(data["amount"]),
+            description=data["description"]
+        )
+
+        new_item.save()
+
+        return JsonResponse({"status": "success"}, status=200)
+    else:
+        return JsonResponse({"status": "error"}, status=401)

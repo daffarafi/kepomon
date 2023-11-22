@@ -138,7 +138,7 @@ def remove_item_ajax(request):
 
 
 @csrf_exempt
-def create_product_flutter(request):
+def create_item_flutter(request):
     if request.method == 'POST':
 
         data = json.loads(request.body)
